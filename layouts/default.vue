@@ -8,10 +8,7 @@
     </section>
 </template>
 
-<script>
-
-
-</script>
+<script></script>
 
 <style scoped>
 .router-link-exact-active {

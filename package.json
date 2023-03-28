@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare",
     "style": "npm run prettier",
     "style-check": "npm run prettier-check",
-    "prettier": "./node_modules/.bin/prettier --config ./config/prettier.json --write \"@(src|test|scripts)/**/*.@(ts|js|md|html|css|json|vue)\"",
+    "prettier": "./node_modules/.bin/prettier --config ./config/prettier.json --write \"@(components|data|layouts|pages)/**/*.@(ts|js|md|html|css|json|vue)\"",
     "prettier-check": "./node_modules/.bin/prettier --config ./config/prettier.json --check \"@(src|test)/**/*.@(ts|js|md|html|css|json|vue)\""
   },
   "devDependencies": {

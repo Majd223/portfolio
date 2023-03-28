@@ -41,9 +41,7 @@
                     />
                 </a>
             </div>
-            <div
-                class="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400"
-            >
+            <div class="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
                 <div>Copyright © {{ new Date().getFullYear() }}</div>
                 <div>•</div>
             </div>
@@ -52,9 +50,7 @@
                 <a href="https://www.freepik.com/vectors/citizen"
                     >Citizen vector created by freepik -
                 </a>
-                <a href="https://www.freepik.com/vectors/css"
-                    >Css vector created by vectorjuice</a
-                >
+                <a href="https://www.freepik.com/vectors/css">Css vector created by vectorjuice</a>
             </div>
         </div>
     </footer>
