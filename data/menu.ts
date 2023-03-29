@@ -1,7 +1,5 @@
-const menu = [
-    { name: "Home", path: "/speaking" },
-    { name: "Projects", path: "/blog" },
-    { name: "Blog", path: "/resources" },
+export const menu = [
+    { name: "Home", path: "/" },
+    { name: "Projects", path: "/projects" },
+    { name: "Blog", path: "/blog" },
 ];
-
-export default menu;

@@ -1,4 +1,4 @@
-const siteMetadata = {
+export const siteMetaData = {
     title: "",
     author: "",
     author_image: "",
@@ -17,4 +17,3 @@ const siteMetadata = {
     rss: "",
 };
 
-export default siteMetadata;

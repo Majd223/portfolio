@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import menu from "../data/menu";
+import { menu } from "../data/menu";
 
 const navLinks = ref(menu);
 </script>

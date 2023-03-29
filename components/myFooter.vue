@@ -12,7 +12,7 @@
                     <img
                         alt="github"
                         class="transition-transform hover:scale-110 w-8 h-8"
-                        src="~assets/icon/github.svg"
+                        src="/icon/github.svg"
                     /> </a
                 ><a
                     aria-label="Open linkedin profile"
@@ -24,7 +24,7 @@
                     <img
                         alt="Linkedin"
                         class="transition-transform hover:scale-110 w-8 h-8"
-                        src="~assets/icon/linkedin.svg"
+                        src="/icon/linkedin.svg"
                     />
                 </a>
                 <a
@@ -37,7 +37,7 @@
                     <img
                         alt="Twitter"
                         class="transition-transform hover:scale-110 w-8 h-8"
-                        src="~assets/icon/twitter.svg"
+                        src="/icon/twitter.svg"
                     />
                 </a>
             </div>
@@ -57,11 +57,11 @@
 </template>
 
 <script lang="ts">
-import siteMetaInfo from "@/data/siteMetaData";
+import { siteMetaData } from "~/data/siteMetaData";
 export default {
     data() {
         return {
-            siteMetadata: siteMetaInfo,
+            siteMetadata: siteMetaData,
         };
     },
 };
