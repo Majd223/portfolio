@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-col items-center justify-center py-15 dark:text-white">
+    <div class="flex flex-col items-center py-15 dark:text-white">
         <h1 class="text-lg font-sans">Image goes here</h1>
         <p>lorem awodhaowuihdowahdaw waod unawoudnawoudnawoud</p>
     </div>
-    <div class="flex justify-center items-center mb-20">
+    <div class=" mb-20">
         <div class="relative border-l dark:border-gray-400">
             <div
                 class="dark:text-white ml-7 last:mb-0 mb-7"

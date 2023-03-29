@@ -25,7 +25,7 @@ export const projectsData = [
     },
     {
         id: 4,
-        title: "Project 3 title",
+        title: "Project 4 title",
         description: "description to the third project, I am working on vue haha",
         tools: ["nuxt", "vue", "tailwind"],
         github: "https://github.com",
@@ -33,7 +33,7 @@ export const projectsData = [
     },
     {
         id: 5,
-        title: "Project 3 title",
+        title: "Project 5 title",
         description: "description to the third project, I am working on vue haha",
         tools: ["nuxt", "vue", "tailwind"],
         github: "https://github.com",

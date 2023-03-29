@@ -2,7 +2,9 @@
     <section class="w-full pb-12 antialiased">
         <div class="mx-auto max-w-8xl">
             <myHeader />
-            <slot />
+            <div class="flex justify-center items-center flex-col mt-10">
+                <slot />
+            </div>
             <myFooter />
         </div>
     </section>

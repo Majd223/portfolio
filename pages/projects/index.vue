@@ -1,5 +1,4 @@
 <template>
-    <div class="flex justify-center items-center flex-col mt-10">
         <div class="text-white mb-20">
             <h1>Hellow</h1>
         </div>
@@ -9,7 +8,6 @@
                 <projectCard :project="p" />
             </div>
         </div>
-    </div>
 </template>
 
 <script lang="ts">
