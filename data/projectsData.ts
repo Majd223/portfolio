@@ -1,0 +1,42 @@
+export const projectsData = [
+    {
+        id: 1,
+        title: "Project 1 title",
+        description: "description to the first project, I am working on vue haha",
+        tools: ["nuxt", "vue", "tailwind"],
+        github: "https://github.com",
+        projectLink: "http://localhost:3000/#",
+    },
+    {
+        id: 2,
+        title: "Project 2 title",
+        description: "description to the second project, I am working on vue haha",
+        tools: ["nuxt", "vue", "tailwind"],
+        github: "https://github.com",
+        projectLink: "http://localhost:3000/#",
+    },
+    {
+        id: 3,
+        title: "Project 3 title",
+        description: "description to the third project, I am working on vue haha",
+        tools: ["nuxt", "vue", "tailwind"],
+        github: "https://github.com",
+        projectLink: "http://localhost:3000/#",
+    },
+    {
+        id: 4,
+        title: "Project 3 title",
+        description: "description to the third project, I am working on vue haha",
+        tools: ["nuxt", "vue", "tailwind"],
+        github: "https://github.com",
+        projectLink: "http://localhost:3000/#",
+    },
+    {
+        id: 5,
+        title: "Project 3 title",
+        description: "description to the third project, I am working on vue haha",
+        tools: ["nuxt", "vue", "tailwind"],
+        github: "https://github.com",
+        projectLink: "http://localhost:3000/#",
+    },
+];

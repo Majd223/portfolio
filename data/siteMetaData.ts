@@ -16,4 +16,3 @@ export const siteMetaData = {
     linkedin: "https://www.linkedin.com/in/",
     rss: "",
 };
-

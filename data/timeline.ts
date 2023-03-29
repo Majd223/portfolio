@@ -4,6 +4,7 @@ export const timeline = [
         title: "Software Developedasdawdar",
         company: "Microsoft",
         date: "2019 - Present",
+        currently: true,
         description:
             "Developed and maintained software applications for Microsoft's cloud platform.",
     },
@@ -12,6 +13,7 @@ export const timeline = [
         title: "Web Developer",
         company: "Google",
         date: "2016 - 2019",
+        currently: false,
         description: "Developed and maintained web applications for Google's search engine.",
     },
     {
@@ -19,6 +21,7 @@ export const timeline = [
         title: "Software Engineer",
         company: "Amazon",
         date: "2014 - 2016",
+        currently: false,
         description:
             "Developed and maintained software applications for Amazon's e-commerce platform.",
     },

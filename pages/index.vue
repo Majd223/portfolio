@@ -16,7 +16,14 @@
                         class="absolute -left-10 w-6 h-6 rounded-full ring-8 dark:ring-gray-900 dark:bg-blue-900"
                         :src="job.image"
                     />
-                    <h3 class="font-bold">{{ job.title }}</h3>
+                    <h3 class="font-bold">
+                        {{ job.title }}
+                        <span
+                            v-if="job.currently"
+                            class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3"
+                            >Currently</span
+                        >
+                    </h3>
                 </div>
                 <h4 class="">{{ job.company }}</h4>
                 <p class="text-gray-400 text-sm italic">{{ job.date }}</p>
@@ -28,11 +35,11 @@
 </template>
 
 <script lang="ts">
-import { timeline } from "~/data/timeline"
+import { timeline } from "~/data/timeline";
 export default {
     data() {
         return {
-            timelineData: timeline
+            timelineData: ref(timeline),
         };
     },
 };

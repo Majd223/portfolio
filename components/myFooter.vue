@@ -61,7 +61,7 @@ import { siteMetaData } from "~/data/siteMetaData";
 export default {
     data() {
         return {
-            siteMetadata: siteMetaData,
+            siteMetadata: ref(siteMetaData),
         };
     },
 };
