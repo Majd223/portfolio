@@ -9,7 +9,7 @@
                         class="h-8 w-8 text-gray-400"
                         src="/icon/folder.svg"
                     />
-                <div class="font-bold text-xl">{{ project.title }}</div>
+                <div class="font-bold text-xl text-gray-300">{{ project.title }}</div>
                 <p class="text-gray-700 text-base mb-4">{{ project.description }}</p>
                 <div class="mt-4 flex">
                     <div v-for="tool in project.tools" :key="tool">

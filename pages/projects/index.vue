@@ -1,6 +1,10 @@
 <template>
-    <div class="flex justify-center items-center mt-10">
-        <div class="grid grid-cols-2 gap-4">
+    <div class="flex justify-center items-center flex-col mt-10">
+        <div class="text-white mb-20">
+            <h1>Hellow</h1>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-6 grid-cols-1">
             <div v-for="p in projects" :key="p.id">
                 <projectCard :project="p" />
             </div>
