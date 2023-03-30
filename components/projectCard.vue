@@ -1,11 +1,11 @@
 <template>
     <NuxtLink :to="`/projects/${project.route}`">
         <div
-            class="rounded border border-gray-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105 transition duration-100 ease-in-out max-w-xl h-60"
+            class="rounded border border-gray-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105 transition duration-100 ease-in-out max-w-xl h-60 sm:max-w-md"
         >
             <div class="pr-10 pl-4 py-4 flex flex-col justify-between">
                 <img alt="Folder icon" class="h-8 w-8 text-gray-400 mb-3" src="/icon/folder.svg" />
-                <div class="font-bold text-xl text-gray-300">{{ project.title }}</div>
+                <h1 class="font-bold text-xl text-gray-300">{{ project.title }}</h1>
                 <p class="text-gray-700 text-base mb-4 line-clamp-2">{{ project.description }}</p>
                 <div class="absolute bottom-3">
                     <div class="mt-2 flex mb-3">

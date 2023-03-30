@@ -9,11 +9,3 @@
         </div>
     </section>
 </template>
-
-<script></script>
-
-<style scoped>
-.router-link-exact-active {
-    color: #94a3b8;
-}
-</style>

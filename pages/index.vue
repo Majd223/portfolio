@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col items-center py-15 dark:text-white">
-        <h1 class="text-lg font-sans">Image goes here</h1>
-        <p>lorem awodhaowuihdowahdaw waod unawoudnawoudnawoud</p>
+        <img alt="avatar image" class="pb-5" src="../public/icon/avatar.svg"/>
+        <h1 class="pb-16 text-xl">Hi! I am Majd and this is my website</h1>
     </div>
     <div class="mb-20">
         <div class="relative border-l dark:border-gray-400">

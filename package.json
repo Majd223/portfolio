@@ -13,8 +13,7 @@
     "prettier-check": "./node_modules/.bin/prettier --config ./config/prettier.json --check \"@(src|test)/**/*.@(ts|js|md|html|css|json|vue)\""
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.6.4",
-    "@tailwindcss/line-clamp": "^0.4.2",
+    "@nuxtjs/tailwindcss": "^6.6.5",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
     "autoprefixer": "^10.4.14",
