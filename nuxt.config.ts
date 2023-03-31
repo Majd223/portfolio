@@ -2,4 +2,9 @@
 export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxt/content'],
     // tailwindscss: { // Options }
+    content: {
+        highlight: {
+            theme: 'github-dark'
+        }
+    }
 })

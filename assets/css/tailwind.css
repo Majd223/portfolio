@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-950;
+    @apply bg-slate-900;
 }
 
 h1
@@ -28,7 +28,5 @@ p {
         @apply p-3 rounded-md bg-white shadow-md h-full;
       }
 
-    .router-link-exact-active {
-        color: #b96789;
-    }
+    
 }

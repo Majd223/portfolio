@@ -1,9 +1,20 @@
 <template>
     <div>
         <main>
-            <ContentDoc />
+            <ContentDoc>
+                <template #not-found>
+                    <h1 class="text-white">Document not found</h1>
+                </template>
+                <template #empty>
+                    <h1 class="text-white">Document is empty</h1>
+                </template>
+            </ContentDoc>
         </main>
     </div>
 </template>
 
-<script lang="ts"></script>
+<style>
+main p {
+    @apply text-white
+}
+</style>

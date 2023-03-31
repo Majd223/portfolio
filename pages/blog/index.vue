@@ -1,6 +1,6 @@
 <template>
-    <div class="text-white mb-20">
-        <h1>Hellow</h1>
+    <div class="text-white mb-20 text-xl max-w-3xl">
+        <h1>Welcome to my Blog page, I will be populating this page soon.</h1>
     </div>
 
     <div class="grid lg:grid-cols-2 gap-6 grid-cols-1">
