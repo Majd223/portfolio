@@ -31,7 +31,7 @@
                     aria-label="Open twitter profile"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
-                    :href="siteMetadata.twitter + siteMetadata.twitter_user"
+                    :href="siteMetadata.twitter"
                     class="text-sm text-gray-500 transition hover:text-gray-600"
                 >
                     <img
@@ -43,14 +43,7 @@
             </div>
             <div class="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
                 <div>Copyright © {{ new Date().getFullYear() }}</div>
-                <div>•</div>
-            </div>
-            <div class="text-sm text-gray-500">
-                Credits to www.freepik.com -
-                <a href="https://www.freepik.com/vectors/citizen"
-                    >Citizen vector created by freepik -
-                </a>
-                <a href="https://www.freepik.com/vectors/css">Css vector created by vectorjuice</a>
+                <div>• Majd Safi</div>
             </div>
         </div>
     </footer>

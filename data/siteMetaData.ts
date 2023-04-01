@@ -5,14 +5,12 @@ export const siteMetaData = {
     position: "",
     location: "",
     description: "",
-    language: "fr-FR",
-    theme: "system", // system, dark or light
+    language: "en-EN",
+    theme: "dark", // system, dark or light
     siteUrl: "https://",
-    github: "https://github.com/",
-    githubUser: "h",
-    githubContentUrlInRepo: "https://github.com",
-    twitter: "https://twitter.com/",
-    twitter_user: "",
-    linkedin: "https://www.linkedin.com/in/",
+    github: "https://github.com/Majd223",
+    githubContentUrlInRepo: "https://github.com/Majd223",
+    twitter: "https://twitter.com/Majd86653821",
+    linkedin: "https://www.linkedin.com/in/majd-s/",
     rss: "",
 };
