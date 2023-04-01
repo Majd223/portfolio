@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "majds-protfolio",
   "private": true,
   "scripts": {
     "build": "nuxt build",
