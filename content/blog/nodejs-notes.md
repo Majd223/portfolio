@@ -1,6 +1,6 @@
 ---
 title: "Notes on Nodejs"
-route: "npm-notes"
+route: "nodejs-notes"
 description: "List of notes I acquired from using NodeJs"
 tools: ["NodeJs", "Typescript", "npm"]
 github: "https://github.com/visual-studio-code-extensions/visual-studio-code-extension-project"
