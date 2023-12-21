@@ -21,7 +21,7 @@ export const timeline = [
         image: "icon/education.svg",
         title: "Teaching Assistant",
         company: "Western Washington University",
-        date: "May 2023 - Present",
+        date: "Dec 2023 - Present",
         currently: true,
         description:
             "Teaching assistant for the Computer Science department, helping students with their assignments and projects.",

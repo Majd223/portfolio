@@ -53,3 +53,46 @@ Therefore, JIT compilation is a trade-off between speed and flexibility, and it 
 ### lax.cond with vmap
 When attempting to use [lax.cond](https://jax.readthedocs.io/en/latest/_autosummary/jax.lax.cond.html) and wrapping the function with vmap, lax.cond becomes lax.select()
 
+### Calling matmul
+in Python 3.9 the operator @ was introduced to call matmul. Which looks way better syntax-wise than calling the function. So something like this
+
+```python
+import numpy as np
+arr1 = np.array([[1, 2], [3, 4]])
+arr2 = np.array([[5, 6], [7, 8]])
+arr1 @ arr2
+```
+But when you call this function its unclear if its calling the numpy function or the JAX function. But my guess is that its calling the numpy function. A simple speed test can confirm this.
+
+```python
+@jax.jit
+def new_matmul(w, c):
+    return jnp.matmul(w, c)
+
+@jax.jit
+def old_matmul(w, c):
+    return w @ c
+
+# where w is an array of floats and c is an array of 0s or 1s
+c = generate_c(new_key(), (9_000_000, 128)) # c is 9 million rows by 128 columns
+w = generate_w(new_key(), (1, 128)) # one row by 128 columns
+
+%timeit new_matmul(w, c)
+%timeit old_matmul(w, c)
+```
+The results are as follows:
+```
+337 ms ± 37.3 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+166 ms ± 8.64 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+```
+This is enough to show that calling the jnp function is faster than calling the @ operator. So its a good practice to write out the entire function call. Another thing to note is that when calling @ I was not able to fit a big array in my VRAM. But when I started calling the jnp function it worked like a charm! jnp.matmul calls XLA's dot_general under the hood. But its not worth it in my opinion to call dot general directly since jnp.matmul figures out the variables to pass to dot_general for you.
+
+### in-place update under JIT
+As we know, JAX doesn't like mutating variables and will create a new array when trying to update a variables. But outside of of JIT, the updates will lead to array copies (because JAX arrays are immutable at the python level). Within JIT, the compiler will apply updates in-place when possible. According to this [array-updates-x-at-idx-set-y](https://jax.readthedocs.io/en/latest/notebooks/Common_Gotchas_in_JAX.html#array-updates-x-at-idx-set-y) example, it says inside jit-compiled code, if the input value is not reused the compiler will optimize the array update to occue in-place. Pretty neat! I came across this when I was trying to create a function that takes three matrixes and preform interleave concat in jax. 
+```python
+@jax.jit
+def interleave_concat(t1, t2, t3):
+    res = jnp.zeros((t1.shape[0] * 3,t1.shape[1]), dtype=jnp.int8)
+    return res.at[0::3,:].set(t1).at[1::3,:].set(t2).at[2::3,:].set(t3)
+```
+This function will take three matrixes and interleave them together. So its t1[0\] t2[0\] t3[0\] t1[1] t2[1\] t3[1\] and so on.
