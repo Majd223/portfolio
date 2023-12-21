@@ -9,6 +9,24 @@ export const timeline = [
             "Working as part of a team to build Phyiscally Unclonable Functions (PUF) protocls and assess their strength.",
     },
     {
+        image: "icon/education.svg",
+        title: "Research Assistant",
+        company: "Western Washington University",
+        date: "May 2023 - Present",
+        currently: true,
+        description:
+            "Building a off-grid tiny house on wheels, with tons of sensors and automation.",
+    },
+    {
+        image: "icon/education.svg",
+        title: "Teaching Assistant",
+        company: "Western Washington University",
+        date: "May 2023 - Present",
+        currently: true,
+        description:
+            "Teaching assistant for the Computer Science department, helping students with their assignments and projects.",
+    },
+    {
         image: "icon/bulb.svg",
         title: "Software Engineer Internship",
         company: "CodeDay labs",
@@ -45,3 +63,51 @@ export const timeline = [
             "Attended every week lectures about growth mindset, emotional intelligence, cognitive flexibility, self-efficacy, and giving/receiving feedback.",
     },
 ];
+
+export const prog_languages = [
+    'Typescript',
+    'Python',
+    'C',
+    'C++',
+    'Rust',
+    'Java',
+    'Javascript',
+    'C#',
+    'SQL',
+    'HTML',
+    'CSS',
+    'LaTeX',
+];
+
+export const libraries = [
+    'JAX',
+    'Nuxt',
+    'Vue.js',
+    'pytorch',
+    'sci-kit learn',
+    'pandas',
+    'numpy',
+    'matplotlib',
+];
+
+export const tools = [
+    'Git',
+    'Docker',
+    'Linux',
+    'Windows',
+]
+export const technologies = [
+    'Azure',
+    'IoT',
+    'Arduino',
+    'Raspberry Pi',
+]
+
+export const concepts = [
+    'Computational Neuroscience',
+    'Quantum Computing',
+    'Energy efficiency',
+    'Genetic Algorithms',
+    'Machine Learning',
+    'Computer Vision', 
+]
