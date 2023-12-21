@@ -65,49 +65,39 @@ export const timeline = [
 ];
 
 export const prog_languages = [
-    'Typescript',
-    'Python',
-    'C',
-    'C++',
-    'Rust',
-    'Java',
-    'Javascript',
-    'C#',
-    'SQL',
-    'HTML',
-    'CSS',
-    'LaTeX',
+    "Typescript",
+    "Python",
+    "C",
+    "C++",
+    "Rust",
+    "Java",
+    "Javascript",
+    "C#",
+    "SQL",
+    "HTML",
+    "CSS",
+    "LaTeX",
 ];
 
 export const libraries = [
-    'JAX',
-    'Nuxt',
-    'Vue.js',
-    'pytorch',
-    'sci-kit learn',
-    'pandas',
-    'numpy',
-    'matplotlib',
+    "JAX",
+    "Nuxt",
+    "Vue.js",
+    "pytorch",
+    "sci-kit learn",
+    "pandas",
+    "numpy",
+    "matplotlib",
 ];
 
-export const tools = [
-    'Git',
-    'Docker',
-    'Linux',
-    'Windows',
-]
-export const technologies = [
-    'Azure',
-    'IoT',
-    'Arduino',
-    'Raspberry Pi',
-]
+export const tools = ["Git", "Docker", "Linux", "Windows"];
+export const technologies = ["Azure", "IoT", "Arduino", "Raspberry Pi"];
 
 export const concepts = [
-    'Computational Neuroscience',
-    'Quantum Computing',
-    'Energy efficiency',
-    'Genetic Algorithms',
-    'Machine Learning',
-    'Computer Vision', 
-]
+    "Computational Neuroscience",
+    "Quantum Computing",
+    "Energy efficiency",
+    "Genetic Algorithms",
+    "Machine Learning",
+    "Computer Vision",
+];

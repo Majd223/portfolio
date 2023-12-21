@@ -16,7 +16,13 @@
 <script lang="ts"></script>
 
 <style>
-.blog-page h1, .blog-page h2, .blog-page h3, .blog-page h4, .blog-page h5, .blog-page p, .blog-page pre {
+.blog-page h1,
+.blog-page h2,
+.blog-page h3,
+.blog-page h4,
+.blog-page h5,
+.blog-page p,
+.blog-page pre {
     @apply text-white;
     margin-bottom: 1em;
     @apply font-sans antialiased;

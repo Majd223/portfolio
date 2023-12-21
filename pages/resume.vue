@@ -21,34 +21,47 @@
                         >
                     </h3>
                 </div>
-                <h4 class="">{{ job.company }}</h4>
+                <h4 class="text-sky-300">{{ job.company }}</h4>
                 <p class="text-gray-400 text-sm italic">{{ job.date }}</p>
                 <p class="max-w-2xl">{{ job.description }}</p>
             </div>
         </div>
-        <div class="mt-10 text-white w-full max-w-3xl" v-for="(section, index) in sectionsData" :key="index">
-            <div class="mt-10 text-white" v-for="(section, index) in sectionsData" :key="index">
-                <h2 class="font-bold text-2xl mb-5">{{ section.title }}</h2>
-                <ul class="flex flex-wrap">
-                    <li v-for="(item, itemIndex) in section.data" :key="itemIndex" class="flex items-center mr-4 mb-4">
-                        {{ item }}
-                        <span v-if="itemIndex < section.data.length - 1" class="text-lg mx-2">•</span>
-                    </li>
-                </ul>
-            </div>
+        <div
+            class="mt-10 text-white w-full max-w-3xl"
+            v-for="(section, index) in sectionsData"
+            :key="index"
+        >
+            <h2 class="font-bold text-2xl mb-5">{{ section.title }}</h2>
+            <ul class="flex flex-wrap">
+                <li
+                    v-for="(item, itemIndex) in section.data"
+                    :key="itemIndex"
+                    class="flex items-center mr-4 mb-4"
+                >
+                    {{ item }}
+                    <span v-if="itemIndex < section.data.length - 1" class="text-lg mx-2">•</span>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { timeline, prog_languages, libraries, tools, technologies, concepts} from "~/data/timeline";
+import {
+    timeline,
+    prog_languages,
+    libraries,
+    tools,
+    technologies,
+    concepts,
+} from "~/data/timeline";
 const timelineData = ref(timeline);
 const sectionsData = ref([
-    { title: 'Programming Languages', data: prog_languages },
-    { title: 'Libraries', data: libraries },
-    { title: 'Tools', data: tools },
-    { title: 'Technologies', data: technologies },
-    { title: 'Concepts', data: concepts },
+    { title: "Programming Languages", data: prog_languages },
+    { title: "Libraries", data: libraries },
+    { title: "Tools", data: tools },
+    { title: "Technologies", data: technologies },
+    { title: "Concepts", data: concepts },
 ]);
 </script>
 

@@ -18,6 +18,6 @@ const navLinks = ref(menu);
 </script>
 <style>
 .router-link-exact-active {
-        color: #a7bebb;
-    }
+    color: #a7bebb;
+}
 </style>

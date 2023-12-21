@@ -15,6 +15,6 @@
 
 <style>
 main p {
-    @apply text-white
+    @apply text-white;
 }
 </style>

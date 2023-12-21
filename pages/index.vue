@@ -12,4 +12,3 @@
 import { welcome } from "~/data/welcome";
 const welcomeInfo = ref(welcome);
 </script>
-
