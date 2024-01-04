@@ -4,14 +4,12 @@
     </div>
 
     <div class="grid lg:grid-cols-2 gap-6 grid-cols-1">
-        <div v-for="p in data" :key="p.id">
-            <blogCard :post="p" />
-        </div>
+        <ContentList path="/blog" v-slot="{ list }">
+            <div v-for="p in list" :key="p._path">
+                <blogCard :post="p" />
+            </div>
+        </ContentList>
     </div>
 </template>
-
-<script setup lang="ts">
-const { data } = await useAsyncData("blog", () => queryContent("/blog").find());
-</script>
 
 <style scoped></style>

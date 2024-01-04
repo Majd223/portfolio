@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="`/projects/${project.route}`">
+    <NuxtLink :to="`${project._path}`">
         <div
             class="rounded border -z-10 border-gray-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105 transition duration-100 ease-in-out max-w-xl h-60 sm:max-w-md"
         >

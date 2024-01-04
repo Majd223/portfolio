@@ -2,7 +2,7 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-  "target": "ES2020",
-  "module": "commonjs"
+  "target": "ES2022",
+  "module": "ESNext"
   }
 }

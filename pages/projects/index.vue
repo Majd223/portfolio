@@ -9,14 +9,12 @@
     </div>
 
     <div class="grid lg:grid-cols-2 gap-6 grid-cols-1">
-        <div v-for="p in data" :key="p.id">
-            <projectCard :project="p" />
-        </div>
+        <ContentList path="/projects" v-slot="{ list }">
+            <div v-for="p in list" :key="p.id">
+                <projectCard :project="p" />
+            </div>
+        </ContentList>
     </div>
 </template>
-
-<script setup lang="ts">
-const { data } = await useAsyncData("projects", () => queryContent("/projects").find());
-</script>
 
 <style scoped></style>

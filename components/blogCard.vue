@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="`/blog/${post.route}`">
+    <NuxtLink :to="`${post._path}`">
         <div
             class="rounded bg-slate-500 cursor-pointer transform hover:-translate-y-1 hover:scale-105 transition duration-100 ease-in-out max-w-xl h-full sm:max-w-sm"
         >
