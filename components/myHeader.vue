@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow-sm bg-slate-950 border-b-2 border-gray-400">
+    <div class="shadow-sm header border-b-2 border-gray-400">
         <nav class="container mx-auto p-4 flex justify-around">
             <NuxtLink to="/" class="font-bold text-gray-100 text-xl pt-1">Majd S</NuxtLink>
             <div class="flex gap-4">
@@ -19,5 +19,9 @@ const navLinks = ref(menu);
 <style>
 .router-link-exact-active {
     color: #a7bebb;
+}
+
+.header {
+    background-color: #121f3d;
 }
 </style>

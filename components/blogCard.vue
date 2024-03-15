@@ -1,7 +1,7 @@
 <template>
     <NuxtLink :to="`${post._path}`">
         <div
-            class="rounded bg-slate-500 cursor-pointer transform hover:-translate-y-1 hover:scale-105 transition duration-100 ease-in-out max-w-xl h-full sm:max-w-sm"
+            class="rounded card-color cursor-pointer transform hover:-translate-y-1 hover:scale-105 transition duration-100 ease-in-out max-w-xl h-full sm:max-w-sm"
         >
             <div class="px-5 py-4 flex flex-col justify-between">
                 <img
@@ -25,3 +25,9 @@
 <script setup lang="ts">
 const { post } = defineProps(["post"]);
 </script>
+
+<style scoped>
+.card-color {
+    background-color: #0b1c3b;
+}
+</style>

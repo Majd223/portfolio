@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .btn-color {
+        background-color: #142850;
+    }
+    
+    .btn-color-hover {
+        background-color: #27496D;
+    }
+}
+
 body {
     @apply bg-slate-900;
 }
-
-
-
 
 @media (max-width: 600px) {
     body {
@@ -17,8 +24,9 @@ body {
 
 .btn {
     @apply px-3 py-2 text-sm font-medium leading-6 text-white whitespace-nowrap 
-    bg-cyan-800 border-2 border-transparent rounded-md shadow-sm hover:bg-transparent hover:text-gray-100 hover:border-cyan-800 focus:outline-none
+    btn-color border-2 border-transparent rounded-md shadow-sm hover:text-gray-100 hover:btn-color-hover focus:outline-none
 }
+
 .card {
     @apply p-3 rounded-md bg-white shadow-md h-full;
 }
